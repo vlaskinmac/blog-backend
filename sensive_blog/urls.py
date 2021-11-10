@@ -18,3 +18,10 @@ if settings.DEBUG:
     urlpatterns += [
         path('__debug__/', include(debug_toolbar.urls)),
     ]
+
+
+# STATICFILES_DIRS = [
+#     f"{path_other_static}/img/banner",
+#     f"{path_other_static}/img/blog",
+#
+# ]
