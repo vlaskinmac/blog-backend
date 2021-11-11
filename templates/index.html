@@ -12,6 +12,23 @@
 </head>
 <body>
   <!--================Header Menu Area =================-->
+
+<!--  {{ most_popular_posts }}-->
+
+<!--  {% for post in most_popular_posts %}-->
+<!--        {{ post.title }}-->
+<!--  {% endfor %}-->
+
+
+
+<!--  {% for post in most_popular_posts.title %}-->
+<!--        <br>-->
+<!--        <ul>-->
+<!--          <li>{{ post }}</li>-->
+<!--        </ul>-->
+<!--  {% endfor %}-->
+
+
   <header class="header_area">
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -58,46 +75,24 @@
     <!--================Hero Banner end =================-->
 
     <!--================ Blog slider start =================-->
+
     <section>
       <div class="container">
+        {% for post in most_popular_posts %}
         <div class="d-flex">
           <div class="flex-fill" style="margin-right: 30px;">
             <div class="card blog__slide text-center">
               <div class="blog__slide__img">
-                <img class="card-img rounded-0" src="{% static 'img/blog/blog-slider/blog-slide1.png' %}" alt="">
+                <img class="card-img rounded-0" src="{{ post.image_url }}" alt="">
               </div>
               <div class="blog__slide__content">
-                <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                <p>2 days ago</p>
+                <h3><a href="#">{{ post.title }}</a></h3>
+                <p>{{ post.published_at }}</p>
               </div>
             </div>
           </div>
+          {% endfor %}
 
-          <div class="flex-fill" style="margin-right: 30px;">
-            <div class="card blog__slide text-center">
-              <div class="blog__slide__img">
-                <img class="card-img rounded-0" src="{% static 'img/blog/blog-slider/blog-slide2.png' %}" alt="">
-              </div>
-              <div class="blog__slide__content">
-                <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                <p>2 days ago</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-fill">
-            <div class="card blog__slide text-center">
-              <div class="blog__slide__img">
-                <img class="card-img rounded-0" src="{% static 'img/blog/blog-slider/blog-slide3.png' %}" alt="">
-              </div>
-              <div class="blog__slide__content">
-                <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                <p>2 days ago</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!--================ Blog slider end =================-->
 
