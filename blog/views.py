@@ -34,12 +34,6 @@ def index(request):
         'fresh_posts': [serialize_post(post) for post in fresh_posts],
     }
 
-    # posts = (
-    #     "Are You Preparing Your Kids for the Real World?",
-    #     "The Biggest Mistake, Ever!",
-    #     "An Open Letter to Bureaucrats (A Must-Read)",
-    # )
-    # return render(request, 'index.html', {"posts": posts})
     return render(request, 'index.html', context=context)
 
 
