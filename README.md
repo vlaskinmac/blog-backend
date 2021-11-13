@@ -25,7 +25,7 @@
 - `STATIC_URL` — по-умолчанию это `'/static/'`. [Что такое STATIC_URL](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-STATIC_URL).
 - `STATIC_ROOT` — по-умолчанию это `'None'`, т.е. текущая папка. [Что такое STATIC_ROOT](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-STATIC_ROOT).
 - `MEDIA_URL` — по-умолчанию это `'/media/'`. [Что такое MEDIA_URL](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_URL).
-- `MEDIA_ROOT` — по-умолчанию это `'media'`. [Что такое MEDIA_ROOT](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_ROOT). 
+- `MEDIA_ROOT` — по-умолчанию это `'media'`. [Что такое MEDIA_ROOT](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_ROOT).
 
 
 ## Страницы сайта
@@ -88,7 +88,8 @@
 
 Страница называется `contact`.
 
-Её можно найти по адресу [127.0.0.1:8000/contacts](127.0.0.1:8000/contacts). К шаблонизации в неё отдаётся только переменная `html_map`. Это строка, в которой лежит HTML-код с картой.
+Её можно найти по адресу [127.0.0.1:8000/contacts](127.0.0.1:8000/contacts).
+К шаблонизации в неё отдаётся только переменная `html_map`. Это строка, в которой лежит HTML-код с картой.
 
 ## Цели проекта
 
